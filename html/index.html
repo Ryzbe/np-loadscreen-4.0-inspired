@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryze NP 4.0 LOADSCREEN</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body class="container">
+    <div id="home-top-video">
+        <video id="background-video" autoplay loop muted poster="img/vod.mp4">
+            <source src="./img/vod.mp4" type="video/mp4">
+          </video>
+          </div>
+
+    <div class="background">
+        <img src="./img/twitter.svg" alt="Italian Trulli">
+        <img src="./img/youtube.svg" alt="Italian Trulli">
+        <img src="./img/twitter.svg" alt="Italian Trulli">
+        <img src="./img/twitter.svg" alt="Italian Trulli">
+    </div>
+
+    <div class="hud">
+        <img src="./img/hex.svg" alt="Italian Trulli">
+        <img src="./img/btm-bar.svg" alt="Italian Trulli">
+    </div>
+
+    <div class="hud2">
+        <img src="./img/tp-bar.svg" alt="Italian Trulli">
+    </div>
+
+    <div class="hud3">
+        <img src="./img/arrow.svg" alt="Italian Trulli">
+    </div>
+
+    <div class="server-name">
+        <span>nopixel</span>
+    </div>
+
+    <div class="version">
+        <span>4.0</span>
+    </div>
+
+    <div class="bg-logo">
+        <img src="./img/np.png" alt="Italian Trulli">
+    </div>
+
+    <div class="loading">
+        <ul id="loadbar">
+            <li><div id="layerFill1" class="bar"></div></li>
+            <li><div id="layerFill2" class="bar"></div></li>
+            <li><div id="layerFill3" class="bar"></div></li>
+            <li><div id="layerFill4" class="bar"></div></li>
+            <li><div id="layerFill5" class="bar"></div></li>
+            <li><div id="layerFill6" class="bar"></div></li>
+            <li><div id="layerFill7" class="bar"></div></li>
+            <li><div id="layerFill8" class="bar"></div></li>
+            <li><div id="layerFill9" class="bar"></div></li>
+            <li><div id="layerFill10" class="bar"></div></li>
+            </ul>
+        </div>
+
+        <script>
+            $(document).ready(function() {
+    $('#loadbar').removeClass('ins');
+    $('#loadbar').removeClass('ins').delay(10).queue(function(next) {
+    $(this).addClass('ins');
+    next();
+    });
+    return false;
+    });
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+.container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+#home-top-video:before {
+	content:"";
+	position: absolute;
+	top:0;
+	right:0;
+	left:0;
+	bottom:0;
+	z-index:1;
+	background-color: rgba(0, 255, 191, 0.5);
+	mix-blend-mode: multiply;
+  }
+  
+  #home-top-video {
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+  }
+
+#background-video {
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+	filter: saturate(0%); 
+  }
+
+.background {
+	position: absolute;
+	top: 65%;
+	left: 5%;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	overflow: hidden;
+	
+}
+
+.hud {
+	position: absolute;
+	top: 80%;
+	left: 5%;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	overflow: hidden;
+}
+
+.hud2 {
+	position: absolute;
+	top: 80%;
+	left: 13.5%;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	overflow: hidden;
+}
+
+.hud3 {
+	position: absolute;
+	top: 85.25%;
+	left: 14.8%;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	overflow: hidden;
+}
+
+.server-name {
+	color: white;
+	position: absolute;
+	top: 81.25%;
+	left: 17.5%;
+}
+
+.version {
+	color: white;
+	position: absolute;
+	top: 91.25%;
+	left: 18%;
+}
+
+.bg-logo {
+	position: absolute;
+	top: 83%;
+	left: 7.25%;
+	width: 100%;
+	height: 100%;
+}
+
+
+/* LOADBAR */
+
+.loading {
+	position: absolute;
+	top: 80.25%;
+	left: 14%;
+	z-index: -1;
+	overflow: hidden;
+}
+
+ul#loadbar {
+	list-style:none;
+	width:140px;
+	margin:0 auto;
+	padding-top:50px;
+	padding-bottom:75px;
+	padding-right: 46px;
+	}
+	ul#loadbar li {
+	float:left;
+	position:relative;
+	width:11px;
+	height:26px;
+	margin-left:3px;
+	background:rgba(229, 229, 229, 0.5);
+	}
+	
+	ul#loadbar li:first-child { margin-left:0; }
+	
+	.ins .bar {
+	background-color:#00FFC0;
+	width:11px;
+	height:26px;
+	opacity:0;
+	-webkit-animation:fill .5s linear forwards;
+	-moz-animation:fill .5s linear forwards;
+	}
+	
+	#layerFill1 { -moz-animation-delay:0.5s; -webkit-animation-delay:0.5s; }
+	#layerFill2 { -moz-animation-delay:1s; -webkit-animation-delay:1s; }
+	#layerFill3 { -moz-animation-delay:1.5s; -webkit-animation-delay:1.5s; }
+	#layerFill4 { -moz-animation-delay:2s; -webkit-animation-delay:2s; }
+	#layerFill5 { -moz-animation-delay:2.5s; -webkit-animation-delay:2.5s; }
+	#layerFill6 { -moz-animation-delay:3s; -webkit-animation-delay:3s; }
+	#layerFill7 { -moz-animation-delay:3.5s; -webkit-animation-delay:3.5s; }
+	#layerFill8 { -moz-animation-delay:4s; -webkit-animation-delay:4s; }
+	#layerFill9 { -moz-animation-delay:4.5s; -webkit-animation-delay:4.5s; }
+	#layerFill10 { -moz-animation-delay:5s; -webkit-animation-delay:5s; }
+	
+	@-moz-keyframes fill {
+	0%{ opacity:0; }
+	100%{ opacity:1; }
+	}
+	
+	@-webkit-keyframes fill {
+	0%{ opacity:0; }
+	100%{ opacity:1; }
+	}
