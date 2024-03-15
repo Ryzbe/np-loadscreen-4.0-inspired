@@ -17,7 +17,7 @@ files {
     'html/img/tp-bar.svg',
     'html/img/twitter.svg',
     'html/img/youtube.svg',
-    'html/vod.mp4'
+    'html/img/vod.mp4'
 }
 
 client_script 'client.lua'
